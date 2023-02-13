@@ -1,0 +1,41 @@
+.cetered{
+	text-align: center;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.flex_column1 {
+    flex: 1;
+    flex-basis: 0;
+    width: 300px;
+}
+
+.flex_column2 {
+    flex: 1;
+    flex-basis: 0;
+    width: 200px;
+}
+
+.frame {
+	width: 500px;
+	height: 500px;
+}
+
+.axis {
+	stroke-width: 5px;
+	stroke: black;
+}
+
+.point {
+	fill:mediumvioletred;
+
+}
+
+.point:hover{
+	fill: lightpink;
+}
