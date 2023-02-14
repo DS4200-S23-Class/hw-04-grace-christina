@@ -11,21 +11,38 @@
 <body>
     <h1 class="centered">hw-04: Event Handling</h1>
 
-     <div class="flexbox">
+     <div class = 'flexbox'>
+        <!-- svg plot col -->
         <div class="flex_column1">
 
-            <svg class="frame">
+            <svg id = 'plot' class="frame">
+            <!-- axis -->
             <line class="axis" x1="5" y1="405" x2="405" y2="405"></line>
             <line class="axis" x1="5" y1="405" x2="5" y2="5"></line>
-            <circle class="point" id="" cx="45" cy="325" r="7" onmouseover="mousover" onmouseout='mouseout' click='click'></circle>
-            <circle class="point" cx="85" cy="245" r="7" onmouseover="mousover" onmouseout='mouseout' click='click'></circle>
-            <circle class="point" cx="245" cy="325" r="7" onmouseover="mousover" onmouseout='mouseout' click='click'></circle>
-            <circle class="point" cx="365" cy="45" r="7" onmouseover="mousover" onmouseout='mouseout' click='click'></circle>
+            <!-- points -->
+            <circle class="point" id="1" cx="45" cy="325" r="7"></circle>
+            <circle class="point" id="2" cx="85" cy="245" r="7"></circle>
+            <circle class="point" id="3" cx="245" cy="325" r="7"></circle>
+            <circle class="point" id="4" cx="365" cy="45" r="7"></circle>
 
         </svg>
         
         </div>
+        <!-- text information col -->
         <div class="flex_column2">
+            <div id="lastPt"></div>
+            
+            <!-- asks for user inputs -->
+            <label for="x-coor">Enter an x-coordinate (between 0 and 10):</label>
+            <input type="number" id="x-coor" min="0" max="10">
+            <br>
+            <label for="y-coor">Enter an y-coordinate (between 0 and 10):</label>
+            <input type="number" id="y-coor" min="0" max="10">
+            <br>
+
+            <!-- button to add point -->
+            <button type="button" id = "addPoint">Add Point</button>
+
             
             
         </div>
@@ -34,10 +51,11 @@
 
 <script src="main.js"></script>
 
-<h3>Acknowledgements</h3>
+<h3 class="centered">Acknowledgements</h3>
 <ul>
-    <li></li>
-    <li></li>
+    <li>https://www.geeksforgeeks.org/how-to-append-html-code-to-a-div-using-javascript/</li>
+    <li>https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute</li>
+    <li>https://stackoverflow.com/questions/48070987/how-to-get-user-input-from-javascript-form</li>
 </ul>
 
 

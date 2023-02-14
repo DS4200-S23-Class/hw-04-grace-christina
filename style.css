@@ -1,4 +1,4 @@
-.cetered{
+.centered{
 	text-align: center;
 }
 
@@ -10,15 +10,13 @@
 }
 
 .flex_column1 {
-    flex: 1;
-    flex-basis: 0;
-    width: 300px;
+    float: left;
+    width: 60%;
 }
 
 .flex_column2 {
-    flex: 1;
-    flex-basis: 0;
-    width: 200px;
+    float: right;
+    width: 40%;
 }
 
 .frame {
@@ -38,4 +36,11 @@
 
 .point:hover{
 	fill: lightpink;
+}
+
+.border {
+    border-color: pink;
+    border-width: 3px;
+    stroke-width: 3px;
+    stroke: lightsalmon;
 }
